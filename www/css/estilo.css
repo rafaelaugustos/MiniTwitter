@@ -1,0 +1,123 @@
+*,*{
+	font-family: 'Roboto', sans-serif; 
+}
+
+.header{
+    background: #00aced;
+    color: #FFF;
+    float: left;
+}
+
+.page{
+	background: #FFF !important;
+	float: left;
+	margin-top: 40px;
+	padding-top: 10px;
+}
+
+.box-time{
+	float: left;
+	width: 100%;
+	padding: 5px;
+	border-bottom: 1px solid #E1E1E1;
+}
+
+.img-post{
+	width: 50px;
+	border-radius: 5px;
+	overflow: hidden;
+	float: left;
+}
+
+.name{
+	float: left;
+	margin-left: 5px;
+	width: calc(100% - 55px);
+}
+
+.name span{
+	color: #CCC;
+	font-size: 12px;
+}
+
+img{
+	width: 100%;
+}
+
+.content-line{
+	float: left;
+	margin-left: 5px;
+	width: calc(100% - 55px);
+}
+
+.content-line p{
+	font-size: 12px;
+	margin: 0;
+}
+
+.box-time:last-child{
+	margin-bottom: 80px;
+}
+
+.btns-line{
+	float: left;
+	margin-left: 5px;
+	width: calc(100% - 55px);
+	padding-top: 5px;
+}
+
+.btns-line i{
+	color: #CCC;
+	margin-right: 30px;
+}
+
+.btns-line a{
+	
+}
+
+.img-timeline{
+	float: left;
+	width: 100%;
+	margin-top: 5px;
+}
+
+
+.rodape{
+	background: #FFF !important;
+	height: 45px !important;
+	width: 100%;
+}
+
+.rodape a{
+	font-size: 12px;
+	float: left;
+	width: 25%;
+	text-align: center;
+	padding: 10px;
+	color: #999;
+}
+
+.rodape a i{
+	width: 100%;
+	float: left;
+	font-size: 15px;
+}
+
+.rodape a span{
+	float: left;
+	width: 100%;
+}
+
+.active{
+	color: #00aced !important;
+}
+
+.statusbar-overlay {
+    background: #00aced;
+    -webkit-transition: 400ms;
+    transition: 400ms;
+}
+ 
+body .statusbar-overlay {
+    background: #00aced;
+}     
