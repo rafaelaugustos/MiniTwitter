@@ -10,17 +10,19 @@ $(function(){
 		//Retweet
 	$('body').on('click', '.segundo', function(e){
 		e.preventDefault();
-		$(this).css('color','#27ae60');
+		$(this).toggleClass('rt');
 		return false;
 	});
 		// Stars
 	$('body').on('click', '.terceiro', function(e){
 		e.preventDefault();
-		$(this).css('color','#f39c12');
+		$(this).toggleClass('star');
 		return false;
 	});
 
-
+	$('.img-timeline a').on('click', function(){
+		alert('foi');
+	});
 
 	
 });

@@ -387,7 +387,7 @@
                 }
                 e.f7PreventPanelSwipe = true;
                 isMoved = true;
-                e.preventDefault();
+                //e.preventDefault();
         
                 // RTL inverter
                 var inverter = app.rtl ? -1 : 1;
@@ -1349,7 +1349,7 @@
         
             // Events
             function preventSubmit(e) {
-                e.preventDefault();
+                //e.preventDefault();
             }
         
             s.attachEvents = function (destroy) {
@@ -1495,7 +1495,7 @@
         
             //Events
             function preventSubmit(e) {
-                e.preventDefault();
+                //e.preventDefault();
             }
         
             m.attachEvents = function (destroy) {
@@ -3814,7 +3814,7 @@
         
                 isMoved = true;
         
-                e.preventDefault();
+                //e.preventDefault();
                 var threshold = opened ? 0 : -app.params.swipePanelThreshold;
                 if (side === 'right') threshold = -threshold;
                 
@@ -4354,7 +4354,7 @@
                     }
                 }
                 isMoved = true;
-                e.preventDefault();
+               // e.preventDefault();
                 
                 touchesDiff = pageX - touchesStart.x;
                 translate = touchesDiff;
@@ -4700,7 +4700,7 @@
                 sortingEl = $(this).parent();
                 sortingItems = sortingEl.parent().find('li');
                 sortableContainer = sortingEl.parents('.sortable');
-                e.preventDefault();
+                //e.preventDefault();
                 app.allowPanelOpen = app.allowSwipeout = false;
             }
             function handleTouchMove(e) {
@@ -4716,7 +4716,7 @@
                 }
                 isMoved = true;
         
-                e.preventDefault();
+                //e.preventDefault();
                 e.f7PreventPanelSwipe = true;
                 touchesDiff = pageY - touchStartY;
                 var translate = touchesDiff;
@@ -6199,7 +6199,7 @@
                     if (tapHoldTimeout) clearTimeout(tapHoldTimeout);
                     tapHoldTimeout = setTimeout(function () {
                         tapHoldFired = true;
-                        e.preventDefault();
+                       // e.preventDefault();
                         $(e.target).trigger('taphold');
                     }, app.params.tapHoldDelay);
                 }
@@ -6244,7 +6244,7 @@
                     });
                 }
                 if ((e.timeStamp - lastClickTime) < app.params.fastClicksDelayBetweenClicks) {
-                    e.preventDefault();
+                    //e.preventDefault();
                 }
                 if (app.params.activeState) {
                     activableElement = findActivableElement(e);
@@ -6292,7 +6292,7 @@
                 if (!trackClick) {
                     if (!activeSelection && needsFastClick) {
                         if (!(app.device.android && !e.cancelable)) {
-                            e.preventDefault();
+                            //e.preventDefault();
                         }
                     }
                     return true;
@@ -6303,7 +6303,7 @@
                 }
         
                 if (!activeSelection) {
-                    e.preventDefault();
+                   // e.preventDefault();
                 }
         
                 if ((e.timeStamp - lastClickTime) < app.params.fastClicksDelayBetweenClicks) {
@@ -6340,7 +6340,7 @@
                 }
         
                 // Send click
-                e.preventDefault();
+               //e.preventDefault();
                 var touch = e.changedTouches[0];
                 var evt = document.createEvent('MouseEvents');
                 var eventType = 'click';
@@ -6393,11 +6393,11 @@
                     e.stopPropagation();
                     if (targetElement) {
                         if (targetNeedsPrevent(targetElement) || isMoved) {
-                            e.preventDefault();
+                            //e.preventDefault();
                         }
                     }
                     else {
-                        e.preventDefault();
+                       // e.preventDefault();
                     }
                     targetElement = null;
                 }
@@ -6504,7 +6504,7 @@
                 if (isLink) {
                     if (clicked.is(app.params.externalLinks)) {
                         if(clicked.attr('target') === '_system') {
-                            e.preventDefault();
+                            //e.preventDefault();
                             window.open(url, '_system');
                         }
                         return;
@@ -6746,7 +6746,7 @@
         
             // Prevent scrolling on overlays
             function preventScrolling(e) {
-                e.preventDefault();
+                //e.preventDefault();
             }
             if (app.support.touch) {
                 $(document).on((app.params.fastClicks ? 'touchstart' : 'touchmove'), '.panel-overlay, .modal-overlay, .preloader-indicator-overlay, .popup-overlay, .searchbar-overlay', preventScrolling);
@@ -6952,7 +6952,7 @@
         $(document).on('submit change', 'form.ajax-submit, form.ajax-submit-onchange', function (e) {
             var form = $(this);
             if (e.type === 'change' && !form.hasClass('ajax-submit-onchange')) return;
-            if (e.type === 'submit') e.preventDefault();
+            if (e.type === 'submit') //e.preventDefault();
             
             var method = form.attr('method') || 'GET';
             var contentType = form.prop('enctype') || form.attr('enctype');
@@ -7568,7 +7568,7 @@
             pb.onSlideTouchStart = function (e) {
                 if (!gestureImg || gestureImg.length === 0) return;
                 if (imageIsTouched) return;
-                if (app.device.os === 'android') e.preventDefault();
+                if (app.device.os === 'android')// e.preventDefault();
                 imageIsTouched = true;
                 imageTouchesStart.x = e.type === 'touchstart' ? e.targetTouches[0].pageX : e.pageX;
                 imageTouchesStart.y = e.type === 'touchstart' ? e.targetTouches[0].pageY : e.pageY;
@@ -7608,7 +7608,7 @@
                         return;
                     }
                 }
-                e.preventDefault();
+                //e.preventDefault();
                 e.stopPropagation();
                 imageIsMoved = true;
                 imageCurrentX = imageTouchesCurrent.x - imageTouchesStart.x + imageStartX;
@@ -7695,7 +7695,7 @@
                     swipeToCloseActiveSlide = pb.swiper.slides.eq(pb.swiper.activeIndex);
                     swipeToCloseTimeStart = (new Date()).getTime();
                 }
-                e.preventDefault();
+                //e.preventDefault();
                 swipeToCloseCurrent = e.type === 'touchmove' ? e.targetTouches[0].pageY : e.pageY;
                 swipeToCloseDiff = swipeToCloseStart - swipeToCloseCurrent;
                 var opacity = 1 - Math.abs(swipeToCloseDiff) / 300;
@@ -8003,7 +8003,7 @@
                 var isTouched, isMoved, touchStartY, touchCurrentY, touchStartTime, touchEndTime, startTranslate, returnTo, currentTranslate, prevTranslate, velocityTranslate, velocityTime;
                 function handleTouchStart (e) {
                     if (isMoved || isTouched) return;
-                    e.preventDefault();
+                    //e.preventDefault();
                     isTouched = true;
                     touchStartY = touchCurrentY = e.type === 'touchstart' ? e.targetTouches[0].pageY : e.pageY;
                     touchStartTime = (new Date()).getTime();
@@ -8013,7 +8013,7 @@
                 }
                 function handleTouchMove (e) {
                     if (!isTouched) return;
-                    e.preventDefault();
+                    //e.preventDefault();
                     allowItemClick = false;
                     touchCurrentY = e.type === 'touchmove' ? e.targetTouches[0].pageY : e.pageY;
                     if (!isMoved) {

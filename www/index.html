@@ -41,7 +41,9 @@
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit
                                     </p>
                                     <div class="img-timeline">
-                                        <img src="images/steve.jpg">
+                                        <a href="#img">
+                                            <img src="images/steve.jpg">
+                                        </a>    
                                     </div>
                                     <div class="btns-line">
                                         <i class="fa fa-reply primeiro" aria-hidden="true"></i>
@@ -112,24 +114,128 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Lightbox -->
+                        <a href="#_" class="lightbox" id="img">
+                            <img src="images/steve.jpg">
+                        </a>
+                    </div>
+
+                    <!-- ME -->
+                    <div class="page hidden" id="me">
+                        <div class="page-content">
+                            <div class="capa">
+                                <img src="images/capa.jpg"> 
+                            </div>
+                            <div class="info-me">
+                                <div class="img-me">
+                                    <img src="images/rafael.jpg">
+                                </div>
+                                <div class="btns-me">
+                                    <a href=""><i class="fa fa-cog"></i></a>
+                                    <a class="btn-padrao" href=""><i class="fa fa-users"></i></a>
+                                    <a class="btn-padrao" href="">Editar Perfil</a>
+                                </div>
+                                <div class="me-info">
+                                    <h1 class="name-me">Rafael Augusto</h1>
+                                    <h2 class="user-me">@RafaelAugusto</h2>
+                                    <div class="about-me">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <a href="#">MeuSite.com</a>
+                                        </p>
+                                    </div>
+                                    <div class="following">
+                                        <b>596</b> FOLLOWING
+                                    </div>
+                                    <div class="followers">
+                                        <b>3,582</b> FOLLOWERS
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-me">
+                                <div class="box-time">
+                                    <div class="img-post">
+                                        <img src="images/rafael.jpg">
+                                    </div>
+                                    <div class="name">Rafael Augusto <span>@Rafael2Sirens</span></div>
+                                    <div class="content-line">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        <div class="img-timeline">
+                                            <a href="#img">
+                                                <img src="images/steve.jpg">
+                                            </a>    
+                                        </div>
+                                        <div class="btns-line">
+                                            <i class="fa fa-reply primeiro" aria-hidden="true"></i>
+                                            <i class="fa fa-retweet segundo rt-disabled" aria-hidden="true"></i>
+                                            <i class="fa fa-star terceiro" aria-hidden="true"></i>
+                                            1
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="box-time">
+                                    <div class="img-post">
+                                        <img src="images/rafael.jpg">
+                                    </div>
+                                    <div class="name">Rafael Augusto <span>@Rafael2Sirens</span></div>
+                                    <div class="content-line">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        
+                                        <div class="btns-line">
+                                            <i class="fa fa-reply primeiro" aria-hidden="true"></i>
+                                            <i class="fa fa-retweet segundo rt-disabled" aria-hidden="true"></i>
+                                            <i class="fa fa-star terceiro" aria-hidden="true"></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="box-time">
+                                    <div class="img-post">
+                                        <img src="images/rafael.jpg">
+                                    </div>
+                                    <div class="name">Rafael Augusto <span>@Rafael2Sirens</span></div>
+                                    <div class="content-line">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </p>
+                                        
+                                        <div class="btns-line">
+                                            <i class="fa fa-reply primeiro" aria-hidden="true"></i>
+                                            <i class="fa fa-retweet segundo rt-disabled" aria-hidden="true"></i>
+                                            <i class="fa fa-star terceiro" aria-hidden="true"></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="toolbar rodape">
                     <div class="toolbar-inner">
-                        <a class="active" href="">
+                        <a class="page-link active" href="#timeline">
                             <i class="fa fa-home" aria-hidden="true"></i>
                             <span>Timeline</span>
                         </a>
-                        <a href="">
+                        <a class="page-link" href="#notification">
                             <i class="fa fa-bell" aria-hidden="true"></i>
                             <span>Notification</span>
                         </a>
-                        <a href="">
+                        <a class="page-link" href="#messages">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                             <span>Messages</span>
                         </a>
-                        <a href="">
+                        <a class="page-link" href="#me">
                             <i class="fa fa-user" aria-hidden="true"></i>
                             <span>Me</span>
                         </a>
@@ -147,6 +253,7 @@
         <script src="framework7/js/framework7.min.js"></script>
         <script src="framework7/my-app.js"></script>
         <script src="js/funcoes.js"></script>
+        <script src="js/pages.js"></script>
     </body>
 
 </html>
