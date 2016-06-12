@@ -11,5 +11,5 @@
 <img src="http://i.imgur.com/JfiIKII.jpg"><br><br><br>
 
 <p>Me</p>
-<img src="http://imgur.com/7xQ8494"><br><br>
-<img src="http://imgur.com/eNBfdkj">
+<img src="http://i.imgur.com/7xQ8494.jpg"><br><br>
+<img src="http://i.imgur.com/eNBfdkj.jpg">
