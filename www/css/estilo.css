@@ -268,3 +268,111 @@ body .statusbar-overlay {
 	margin-top: 0 !important;
 	padding: 0 !important;
 }
+
+
+/* Notification */
+
+.notification-star{
+	padding-left: 30px;
+}
+
+.notification-star i{
+	float: left;
+	color: #f39c12;
+	font-size: 12px;
+	margin-right: 5px;
+}
+
+.notification-star img{
+	max-width: 25px;
+}
+
+.notification-star .name{
+	margin-left: 15px;
+}
+
+.notification-star .name span{
+	color: black;
+}
+
+.notification-star .content-line{
+	margin-left: 15px;
+	color: #CCC;
+	font-size: 12px;
+	width: calc(100% - 13px);
+}
+
+.notification-rt{
+	padding-left: 30px;
+}
+
+.notification-rt i{
+	float: left;
+	color: #27ae60;
+	font-size: 12px;
+	margin-right: 5px;
+}
+
+.notification-rt img{
+	max-width: 25px;
+}
+
+.notification-rt .name{
+	margin-left: 15px;
+}
+
+.notification-rt .name span{
+	color: black;
+}
+
+.notification-rt .content-line{
+	margin-left: 15px;
+	color: #CCC;
+	font-size: 12px;
+	width: calc(100% - 13px);
+}
+
+/* Messages */
+
+.list-messages{
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 100%;
+}
+
+.list-messages li{
+	padding: 10px;
+	float: left;
+	width: 100%;
+	list-style: none;
+	border-bottom: 1px solid #F5F5F5;
+}
+
+.list-messages li .img{
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.list-messages li .name{
+	font-size: 13px;
+	width: calc(100% - 65px);
+}
+
+.list-messages li .min-message{
+	margin-left: 5px;
+	font-size: 12px;
+	color: #AAA;
+	float: left;
+	width: calc(100% - 65px);
+}
+
+.time-message{
+	float: right;
+	width: 20px;
+	font-size: 12px;
+	color: #AAA;
+}

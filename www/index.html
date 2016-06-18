@@ -22,7 +22,7 @@
                 <!-- HEADER NAVBAR -->
                 <div class="navbar header">
                     <div class="navbar-inner">
-                        <div class="center">Home</div>
+                        <div class="center title-twitter">Home</div>
                     </div>
                 </div>
                 
@@ -219,6 +219,123 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Notificações -->
+                    <div class="page hidden" id="notification">
+                        <div class="page-content">
+
+                            <div class="box-time notification-star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <div class="img-post">
+                                    <img src="images/rafael.jpg">
+                                </div>
+                                <div class="name">Rafael Augusto <span>favoritou 2 Tweets</span></div>
+                                <div class="content-line">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    </p>
+                                    <div class="img-timeline">
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="box-time mencionar">
+                                <div class="img-post">
+                                    <img src="images/rafael.jpg">
+                                </div>
+                                <div class="name">Rafael Augusto <span>@Rafael2Sirens</span></div>
+                                <div class="content-line">
+                                    <p>
+                                        @Rafael2Sirens Lorem ipsum dolor sit amet
+                                    </p>
+                                    
+                                    <div class="btns-line">
+                                        <i class="fa fa-reply primeiro" aria-hidden="true"></i>
+                                        <i class="fa fa-retweet segundo rt-disabled" aria-hidden="true"></i>
+                                        <i class="fa fa-star terceiro" aria-hidden="true"></i>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="box-time notification-rt">
+                                <i class="fa fa-retweet" aria-hidden="true"></i>
+                                <div class="img-post">
+                                    <img src="images/rafael.jpg">
+                                </div>
+                                <div class="name">Rafael Augusto <span>retweetou</span></div>
+                                <div class="content-line">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    </p>
+                                    <div class="img-timeline">
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="page hidden" id="messages">
+                        <div class="page-content">
+                            <ul class="list-messages">
+                                <li class="open-popup" data-popup=".popup-message">
+                                    <div class="img">
+                                        <img src="images/mateus.jpg">
+                                    </div>
+                                    <div class="name">Matteus <span>@Matteus</span></div>
+                                    <div class="min-message">
+                                        sit amet, consectetur adipiscing elit
+                                    </div>
+                                    <div class="time-message">
+                                        <span>44s</span>
+                                    </div>
+                                </li> 
+                                <li>
+                                    <div class="img">
+                                        <img src="images/daniel.jpg">
+                                    </div>
+                                    <div class="name">Daniel <span>@Daniel</span></div>
+                                    <div class="min-message">
+                                        sit amet, consectetur adipiscing elit adipiscing
+                                    </div>
+                                    <div class="time-message">
+                                        <span>1d</span>
+                                        <i class="fa fa-reply" aria-hidden="true"></i>
+                                    </div>
+                                </li> 
+                                <li>
+                                    <div class="img">
+                                        <img src="images/lucas.jpg">
+                                    </div>
+                                    <div class="name">Lucas <span>@Lucas</span></div>
+                                    <div class="min-message">
+                                        sit amet, consectetur adipiscing elit adipiscing elit adipiscing elit
+                                    </div>
+                                    <div class="time-message">
+                                        <span>3d</span>
+                                    </div>
+                                </li> 
+                                <li>
+                                    <div class="img">
+                                        <img src="images/david.jpg">
+                                    </div>
+                                    <div class="name">David <span>@David</span></div>
+                                    <div class="min-message">
+                                        sit amet, consectetur adipiscing elit adipiscing elit
+                                    </div>
+                                    <div class="time-message">
+                                        <span>6d</span>
+                                    </div>
+                                </li>   
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="toolbar rodape">
@@ -241,8 +358,19 @@
                         </a>
                     </div>
                 </div>
+
+                
             </div>
+
         </div>
+        <!-- Popups -->
+        <div class="popup popup-message">
+
+        </div>
+
+
+
+
         
         <!-- Javascript -->
         <script src="cordova.js" id="xdkJScordova_"></script>
