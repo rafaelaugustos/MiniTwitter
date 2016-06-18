@@ -6,5 +6,10 @@
 </p>
 
 <h2>Imagens atuais</h2>
-<img src="http://i.imgur.com/s1gnpPY.jpg">
-<img src="http://i.imgur.com/JfiIKII.jpg">
+<p>TimeLine</p>
+<img src="http://i.imgur.com/s1gnpPY.jpg"><br><br>
+<img src="http://i.imgur.com/JfiIKII.jpg"><br><br><br>
+
+<p>Me</p>
+<img src="http://i.imgur.com/7xQ8494.jpg"><br><br>
+<img src="http://i.imgur.com/eNBfdkj.jpg">
