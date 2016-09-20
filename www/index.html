@@ -28,9 +28,28 @@
                 
                 <!-- PAGES -->
                 <div class="pages">
-                    <!-- TIMELINE -->
-                    <div class="page" id="timeline">
+                    <!-- LOGIN -->
+                    
+                    <div class="page" id="login">
                         <div class="page-content">
+                            <div class="logo-twitter">
+                                <img src="images/twitter.png">
+                            </div>
+                            <div class="info-login">
+                                <h1>Welcome to Twitter</h1>
+                                <p>Get real-time updates about what matters to you</p>
+                                <button id="sign" data-popup=".popup-sign" class="open-popup">Sign Up</button>
+                                <button id="log-in" class="open-login">Log in</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TIMELINE -->
+                    <div class="page hidden" id="timeline">
+                        <div class="page-content pull-to-refresh-content espacamento" data-ptr-distance="100">
+                            <div class="pull-to-refresh-layer">
+                              <div class="preloader"></div>
+                              <div class="pull-to-refresh-arrow"></div>
+                            </div>
                             <div class="box-time">
                                 <div class="img-post">
                                     <img src="images/rafael.jpg">
@@ -123,13 +142,13 @@
 
                     <!-- ME -->
                     <div class="page hidden" id="me">
-                        <div class="page-content">
+                        <div class="page-content espacamento">
                             <div class="capa">
-                                <img src="images/capa.jpg"> 
+                                
                             </div>
                             <div class="info-me">
                                 <div class="img-me">
-                                    <img src="images/rafael.jpg">
+                                    
                                 </div>
                                 <div class="btns-me">
                                     <a href=""><i class="fa fa-cog"></i></a>
@@ -137,14 +156,8 @@
                                     <a class="btn-padrao" href="">Editar Perfil</a>
                                 </div>
                                 <div class="me-info">
-                                    <h1 class="name-me">Rafael Augusto</h1>
-                                    <h2 class="user-me">@RafaelAugusto</h2>
-                                    <div class="about-me">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            <a href="#">MeuSite.com</a>
-                                        </p>
-                                    </div>
+                                    
+                                    
                                     <div class="following">
                                         <b>596</b> FOLLOWING
                                     </div>
@@ -222,7 +235,7 @@
 
                     <!-- Notificações -->
                     <div class="page hidden" id="notification">
-                        <div class="page-content">
+                        <div class="page-content espacamento">
 
                             <div class="box-time notification-star">
                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -282,7 +295,7 @@
 
                     <!-- Message -->
                     <div class="page hidden" id="messages">
-                        <div class="page-content">
+                        <div class="page-content espacamento">
                             <ul class="list-messages">
                                 <li class="open-popup" data-popup=".popup-message">
                                     <div class="img">
@@ -358,6 +371,8 @@
                         </a>
                     </div>
                 </div>
+                
+                
 
                 
             </div>
@@ -367,7 +382,33 @@
         <div class="popup popup-message">
 
         </div>
-
+        
+        <div class="popup popup-sign">
+            <div class="header-popup">
+                <div class="left" id="closeSign">Cancel</div>
+                <div class="right" id="save-sign">Save</div>
+            </div>
+            <div class="content-block">
+                <form name="sign">
+                    <input type="text" name="nome" placeholder="Nome Completo">
+                    <input type="text" name="username" placeholder="Username">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="password" name="senha" placeholder="Senha">
+                    <textarea name="about" placeholder="Sobre"></textarea>
+                </form>
+            </div>
+        </div>
+        
+        <div class="login-screen">
+            
+            <form name="login">
+                <h1 class="center">Sign In</h1>
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="senha" placeholder="Senha">
+                
+                <button>Sign in</button>
+            </form>
+        </div>
 
 
 

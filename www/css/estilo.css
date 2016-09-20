@@ -11,7 +11,6 @@
 .page{
 	background: #FFF !important;
 	float: left;
-	margin-top: 40px;
 	padding-top: 10px;
 }
 
@@ -375,4 +374,117 @@ body .statusbar-overlay {
 	width: 20px;
 	font-size: 12px;
 	color: #AAA;
+}
+
+
+/* LOGIN */
+.header{
+    display: none;
+}
+
+.rodape{
+    display: none;
+}
+
+#login{
+    background: #3498db !important;
+}
+
+.logo-twitter{
+    width: 40px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.info-login{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    bottom: 100px;
+}
+
+.info-login h1{
+    color: #FFF;
+    font-weight: 100;
+}
+
+.info-login p{
+    color: #FFF;
+    font-weight: 100;
+}
+
+#sign{
+    width: 80%;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    background: #FFF;
+    color: #3498db;
+}
+
+#log-in{
+    width: 80%;
+    background: transparent;
+    border: 0;
+    color: #FFF;
+    margin-top: 10px;
+}
+
+.header-popup{
+    float: left;
+    width: 100%;
+    padding: 10px;
+    background: #3498db;
+    color: #FFF;
+}
+
+.header-popup .left{
+    text-align: left;
+    float: left;
+}
+
+.header-popup .right{
+    text-align: right;
+    float: right;
+}
+
+form[name=sign]{
+    margin-top: 25px;
+    float: left;
+    width: 100%;
+}
+
+form[name=sign] input,textarea{
+    width: 100%;
+    float: left;
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid #E1E1E1 !important;
+    margin-top: 10px;
+    resize: none;
+}
+
+form[name=login]{
+    text-align: center;
+}
+
+form[name=login] input{
+    width: 100%;
+    float: left;
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid #E1E1E1 !important;
+    margin-top: 10px;
+    resize: none;
+}
+
+form[name=login] button{
+    margin-top: 20px;
+    border: 0;
+    background: transparent;
+}
+
+.espacamento{
+    margin-top: 40px;
 }
