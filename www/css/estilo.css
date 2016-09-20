@@ -3,7 +3,7 @@
 }
 
 .header{
-    background: #00aced;
+    background: #FFF;
     color: #FFF;
     float: left;
 }
@@ -26,6 +26,33 @@
 	border-radius: 5px;
 	overflow: hidden;
 	float: left;
+}
+
+.title-twitter img{
+	max-width: 30px;
+}
+
+.right i{
+	color:  #00aced;
+}
+
+.tweet-box{
+	width: 100%;
+	float:  left;
+	padding:  10px;
+	border-bottom:  #E1E1E1;
+	border-bottom: 1px solid #E1E1E1;
+}
+
+.tweet-box span{
+	color:  #666;
+	float: left;
+}
+
+.tweet-box i{
+	float: right;
+	color:  #666;
+	font-size: 16px;
 }
 
 .name{
